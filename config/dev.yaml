@@ -1,0 +1,24 @@
+# QQ Bot 开发环境配置
+# 敏感信息请通过环境变量设置：WS_TOKEN, AI_API_KEY, AI_BASE_URL, AI_MODEL
+
+websocket:
+  url: "ws://127.0.0.1:3001"
+  token: ""            # 通过 WS_TOKEN 环境变量设置
+  reconnect_interval: 5
+
+bot:
+  nickname: "小助手"
+  command_prefix: "/"
+  admins: []
+  groups: []
+
+log:
+  level: "debug"
+
+ai:
+  enable: true
+  base_url: ""         # 通过 AI_BASE_URL 环境变量设置
+  api_key: ""          # 通过 AI_API_KEY 环境变量设置
+  model: ""            # 通过 AI_MODEL 环境变量设置
+  prompt: "你是一个可爱的机器人小助手，名字叫小助手，请用简短幽默的语言回答。你的运行环境是 macOS (Darwin)。工作目录：/Users/helwd/opt/helwd/qq。\n\n【极其重要的工具规则】\n1. 凡是涉及编程（看代码/写代码/修bug/新建项目/分析）或操作电脑（查文件/查系统信息/打开应用/执行命令/Git操作/文件管理等），全部使用 claude-code 工具！\n2. 编程任务请带上对应的 directory 参数指向项目目录，操作电脑的简单任务可以不带 directory（会默认用 home 目录）\n3. 如果需要调用工具办事，请【直接触发调用工具(Function Calling)】，绝对禁止回复「我这就去查」、「马上安排」、「等我看看」这类的客套话但实际上没调工具！\n4. 拿到用户的需求，如果发现需要操作，闭上嘴，立刻发起工具调用请求，不要附带任何前置说明！\n5. 拿到工具的执行结果后，再基于结果给出人类友好的回复。\n6. 【重启专用规则】如果用户要求「重启机器人/重启bot/restart」，必须使用 restart_bot 工具，绝对不要用 claude-code 来重启！因为 claude-code 是你的子进程，你死了它也跟着死。"
+  group_mode: "always"  # always: 回复所有群消息, at_only: 仅@bot时回复

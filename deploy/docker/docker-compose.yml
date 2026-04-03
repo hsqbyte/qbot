@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  # NapCat 协议端 - 负责连接 QQ 服务器
+  napcat:
+    image: mlikiowa/napcat-docker:latest
+    container_name: napcat
+    restart: always
+    ports:
+      - "6099:6099"   # WebUI 管理面板
+      - "3001:3001"   # WebSocket 正向连接端口
+    environment:
+      - NAPCAT_GID=0
+      - NAPCAT_UID=0
+    volumes:
+      - napcat_data:/app/.config/QQ
+    networks:
+      - bot-net
+
+  # QQ Bot 应用
+  qbot:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    container_name: qbot
+    restart: always
+    depends_on:
+      - napcat
+    environment:
+      - APP_ENV=prod
+    networks:
+      - bot-net
+
+volumes:
+  napcat_data:
+
+networks:
+  bot-net:
+    driver: bridge

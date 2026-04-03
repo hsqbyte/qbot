@@ -1,0 +1,19 @@
+# 编译产物
+bin/
+*.exe
+
+# 依赖
+vendor/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 环境
+.env

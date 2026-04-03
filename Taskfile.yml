@@ -1,0 +1,61 @@
+version: '3'
+
+tasks:
+  dev:
+    desc: 启动开发模式
+    cmds:
+      - go run main.go dev
+
+  build:
+    desc: 编译二进制
+    cmds:
+      - go build -o bin/qbot main.go
+
+  release:
+    desc: 完整发布构建
+    cmds:
+      - go fmt ./...
+      - go mod tidy
+      - go build -ldflags="-s -w" -o bin/qbot main.go
+
+  fmt:
+    desc: 格式化代码
+    cmds:
+      - go fmt ./...
+
+  tidy:
+    desc: 整理依赖
+    cmds:
+      - go mod tidy
+
+  clean:
+    desc: 清理构建产物
+    cmds:
+      - rm -rf bin/
+
+  # --- Docker ---
+
+  docker-build:
+    desc: 构建 Docker 镜像
+    cmds:
+      - docker-compose -f deploy/docker/docker-compose.yml build
+
+  deploy:
+    desc: 构建并启动（含 NapCat）
+    cmds:
+      - docker-compose -f deploy/docker/docker-compose.yml up -d --build
+
+  docker-logs:
+    desc: 查看日志
+    cmds:
+      - docker-compose -f deploy/docker/docker-compose.yml logs -f
+
+  docker-down:
+    desc: 停止服务
+    cmds:
+      - docker-compose -f deploy/docker/docker-compose.yml down
+
+  docker-restart:
+    desc: 重启服务
+    cmds:
+      - docker-compose -f deploy/docker/docker-compose.yml restart

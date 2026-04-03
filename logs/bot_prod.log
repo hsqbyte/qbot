@@ -1,0 +1,46 @@
+2026-04-07 18:59:07 [INFO] 🚀 QQ Bot 启动中... [env=prod]
+2026-04-07 18:59:07 [INFO] 🧠 AI 大模型客户端已初始化
+2026-04-07 18:59:07 [INFO] ⚙️ 成功加载技能: claude-code (来自 skills/claude-code)
+2026-04-07 18:59:07 [INFO] ⚙️ 成功加载技能: weather (来自 skills/weather)
+2026-04-07 18:59:07 [INFO] 🔗 技能目录扫描完成，共加载 2 个技能
+2026-04-07 18:59:07 [INFO] 💬 加载了 0 个持久化会话记忆
+2026-04-07 18:59:07 [INFO] 📦 注册 Handler: GroupAdmin
+2026-04-07 18:59:07 [INFO] 📦 注册 Handler: AIChat
+2026-04-07 18:59:07 [INFO] 📦 注册 Handler: GroupCommand
+2026-04-07 18:59:07 [INFO] 📦 注册 Handler: GroupWelcome
+2026-04-07 18:59:07 [INFO] 📦 注册 Handler: PrivateMsg
+2026-04-07 18:59:07 [INFO] ⏰ 定时任务已启动
+2026-04-07 18:59:07 [INFO] 🔌 连接 NapCat: ws://napcat:3001
+2026-04-07 18:59:07 [ERROR] ❌ 连接失败: dial tcp: lookup napcat: no such host
+2026-04-07 18:59:07 [WARN] ⏳ 10 秒后尝试重连...
+2026-04-07 18:59:17 [INFO] 🔌 连接 NapCat: ws://napcat:3001
+2026-04-07 18:59:17 [ERROR] ❌ 连接失败: dial tcp: lookup napcat: no such host
+2026-04-07 18:59:17 [WARN] ⏳ 10 秒后尝试重连...
+2026-04-07 18:59:27 [INFO] 🔌 连接 NapCat: ws://napcat:3001
+2026-04-07 18:59:27 [ERROR] ❌ 连接失败: dial tcp: lookup napcat: no such host
+2026-04-07 18:59:27 [WARN] ⏳ 10 秒后尝试重连...
+2026-04-07 18:59:37 [INFO] 🔌 连接 NapCat: ws://napcat:3001
+2026-04-07 18:59:37 [ERROR] ❌ 连接失败: dial tcp: lookup napcat: no such host
+2026-04-07 18:59:37 [WARN] ⏳ 10 秒后尝试重连...
+2026-04-07 18:59:42 [INFO] 🛑 正在关闭 Bot...
+2026-04-07 18:59:42 [INFO] 👋 Bot 已停止
+2026-04-07 18:59:43 [INFO] 🚀 QQ Bot 启动中... [env=prod]
+2026-04-07 18:59:43 [INFO] 🧠 AI 大模型客户端已初始化
+2026-04-07 18:59:43 [INFO] ⚙️ 成功加载技能: claude-code (来自 skills/claude-code)
+2026-04-07 18:59:43 [INFO] ⚙️ 成功加载技能: weather (来自 skills/weather)
+2026-04-07 18:59:43 [INFO] 🔗 技能目录扫描完成，共加载 2 个技能
+2026-04-07 18:59:43 [INFO] 💬 加载了 0 个持久化会话记忆
+2026-04-07 18:59:43 [INFO] 📦 注册 Handler: GroupAdmin
+2026-04-07 18:59:43 [INFO] 📦 注册 Handler: AIChat
+2026-04-07 18:59:43 [INFO] 📦 注册 Handler: GroupCommand
+2026-04-07 18:59:43 [INFO] 📦 注册 Handler: GroupWelcome
+2026-04-07 18:59:43 [INFO] 📦 注册 Handler: PrivateMsg
+2026-04-07 18:59:43 [INFO] ⏰ 定时任务已启动
+2026-04-07 18:59:43 [INFO] 🔌 连接 NapCat: ws://napcat:3001
+2026-04-07 18:59:43 [ERROR] ❌ 连接失败: dial tcp: lookup napcat: no such host
+2026-04-07 18:59:43 [WARN] ⏳ 10 秒后尝试重连...
+2026-04-07 18:59:53 [INFO] 🔌 连接 NapCat: ws://napcat:3001
+2026-04-07 18:59:53 [ERROR] ❌ 连接失败: dial tcp: lookup napcat: no such host
+2026-04-07 18:59:53 [WARN] ⏳ 10 秒后尝试重连...
+2026-04-07 18:59:54 [INFO] 🛑 正在关闭 Bot...
+2026-04-07 18:59:54 [INFO] 👋 Bot 已停止

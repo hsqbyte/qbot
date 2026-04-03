@@ -1,0 +1,23 @@
+# QQ Bot 生产环境配置（Docker 网络中使用容器名）
+# 敏感信息请通过环境变量设置：WS_TOKEN, AI_API_KEY, AI_BASE_URL, AI_MODEL
+
+websocket:
+  url: "ws://napcat:3001"
+  token: ""            # 通过 WS_TOKEN 环境变量设置
+  reconnect_interval: 10
+
+bot:
+  nickname: "小助手"
+  command_prefix: "/"
+  admins: []
+  groups: []
+
+log:
+  level: "info"
+
+ai:
+  enable: true
+  base_url: ""         # 通过 AI_BASE_URL 环境变量设置
+  api_key: ""          # 通过 AI_API_KEY 环境变量设置
+  model: ""            # 通过 AI_MODEL 环境变量设置
+  prompt: "你是一个可爱的机器人小助手，名字叫小助手，请用简短幽默的语言回答。"
